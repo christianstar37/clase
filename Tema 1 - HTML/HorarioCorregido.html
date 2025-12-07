@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <style>
+        table, th, td {
+            border: 1px solid rgb(0, 0, 0);
+            text-align: center;
+        }
+    </style>
+</head>
+<!--Usar tbody y thead-->
+<body>
+    <table style="width: 100%">
+        <caption><h1>Mi horario de 1º de ASIR</h1></caption>
+        <thead>
+            <tr style="font-size: large;">
+                <th>Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>8:15-9:15</b></td>
+                <td>Digitalización</td>
+                <td>IPE</td>
+                <td rowspan="2">Redes</td>
+                <td>Base de datos</td>
+                <td>ISO</td>
+            </tr>
+            <tr>
+                <td><b>9:15-10:15</b></td>
+                <td rowspan="2">Base de datos</td>
+                <td rowspan="2">Redes</td>
+                <td>Redes</td>
+                <td>Hardware</td>
+            </tr>       
+            <tr>
+                <td><b>10:15-11:15</b></td>
+                <td>ISO</td>
+                <td>IPE</td>
+                <td>Base de datos</td>
+            </tr>
+            <tr>
+                <td><b>11:15-11:45</b></td>
+                <td colspan="5">RECREO</td>
+            <tr>
+                <td><b>11:45-12:45</b></td>
+                <td>ISO</td>
+                <td rowspan="2">ISO</td>
+                <td>Hardware</td>
+                <td rowspan="2">ISO</td>
+                <td>Base de datos</td>
+            </tr>
+            <tr>
+                <td><b>12:45-13:45</b></td>
+                <td>IPE</td>
+                <td rowspan="2">Lenguaje de marcas</td>
+                <td>Redes</td>
+            </tr>
+            <tr>
+                <td><b>13:45-14:45</b></td>
+                <td>Sostenibilidad</td>
+                <td>Base de datos</td>
+                <td>Hardware</td>
+                <td>Lenguaje de marcas</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

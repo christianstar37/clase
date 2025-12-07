@@ -1,0 +1,4 @@
+
+    En la página Nueve chistes se utiliza la entidad numérica 💿 &#128191;.
+    En la página Nueve chistes las palabras que forman el título son enlaces a cada uno de los apartados de la página.
+

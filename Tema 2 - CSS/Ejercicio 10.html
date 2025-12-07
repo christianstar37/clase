@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-family:arial, serif;
+        }
+        input {
+            border-radius: 3px;
+        }
+        
+        input:focus {
+            border: 2px solid;
+            box-shadow: 0 0 0 2px rgb(0, 255, 42);
+            border-color: rgb(0, 255, 42);
+            outline: none;
+        }   
+
+        input#boton-aceptar {
+            background-color: rgb(0, 255, 21);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div-formulario">
+        <form action="registro.php" method="post"> <h1>Crear cuenta</h1>
+        <div>
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" class="entrada borde-redondo"> </div> <br>
+    <div>
+        <label for="correo">Correo Electrónico</label><br>
+        <input type="email" id="correo" name="correo" class="entrada borde-redondo"> </div> <br>
+    <div>
+        <label for="contrasenya">Contraseña</label><br>
+        <input type="password" id="contrasenya" name="contrasenya" class="entrada borde-redondo"> </div><br><div>
+        <label for="contrasenya-rep">Repetir Contraseña</label><br>
+        <input type="password" id="contrasenya-rep" name="contrasenya-rep" class="entrada borde-redondo"> </div><br>
+    <div>
+        <input type="submit" value="Crear tu cuenta" id="boton-aceptar" class="borde-redondo"> </div>
+    </form> </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con condiciones de validación</title>
+</head>
+<body>
+    <!--
+        Crearemos un formulario que se envíe a https://172.16.2.3:8443/recibe.php mediate el método POST con las siguientes especificaciones:
+
+        1 Campo de texto cuyo atributo name sea nombreAlumno, y que cumpla la validación de tener entre 5 y 10 caracteres y que sea obligatorio. 
+        2. Campo apellidos, atributo name será apellidosAlumno. 
+        3. Campo DNI, cuyo atributo name será DNI y tendrá que cumplir con el patrón de 8 dígitos seguidos por una letra mayúscula.
+        4. Campo submit cuyo name sea enviaValidado.
+
+    -->
+    <form action="https://172.16.2.3:8443/recibe.php" method="POST">
+
+        <!--Nombre del alumno-->
+        <label for="nombreAlumno">Nombre:</label>
+        <input type="text" id="nombreAlumno" name="nombreAlumno>" required minlength="5" maxlength="10"><br><br> 
+        
+        <!--Apellido del alumno-->
+        <label for="apellidosAlumno">Apellidos:</label>
+        <input type="text" id="apellidosAlumno" name="apellidosAlumno"><br><br>
+        
+        <!--DNI del alumno-->
+        <label for="DNI">DNI:</label>
+        <input type="text" id="DNI" name="DNI" pattern="[0-9]{8}[A-Z]{1}"><br><br>
+
+        <!--Botón-->
+        <button type="submit" name="enviaValidado">Enviar</button>
+        
+    </form>
+</body>
+</html>

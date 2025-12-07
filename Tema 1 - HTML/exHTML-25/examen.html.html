@@ -1,0 +1,115 @@
+<!-- Cree el tipo de documento para que sea html  con lenguaje español y utf8
+en la cabecera html:
+*  el titulo tiene que poner examen de Nombre de alumno
+
+-->    
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen de Christian Castillo Díaz</title>
+  <style>
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #t_img {
+      width:0%;
+    }
+
+  </style>
+</head>
+<body>
+<!-- En el cuerpo del documento
+El encabezamiento
+  <!-- Encabezado de clase 1
+
+Seis chistes  y más
+
+-->
+
+<header id="chistes">
+  <h1>Seis chistes y más</h1>
+</header>
+
+<!-- Sección nav 
+Enlaces a los identificadores de las sesiones -->
+<div id="navegadores">
+  <a href="#chistes">Chistes</a>
+  <a href="#medicos">Médicos</a>
+  <a href="#malentendidos">Malentendidos</a>
+  <a href="#otros">Otros</a>
+</div>
+
+<!-- Sección identificativa de Médicos -->
+<div id="medicos">
+  <!-- Tabla con borde 1 px mirar captura-->
+  <table>
+    <tbody>
+      <tr>
+        <td rowspan="2" id="t_img"><img src="imagen/risa.jpeg" alt="emoji"></td>
+        <td colspan="3"><h3>Médicos</h3></td>
+      </tr>
+      <tr>
+        <td> 
+          Un paciente entra en una consulta y el médico le pregunta: <br>
+          - ¿Qué es lo que le ha traído por aquí? <br>
+          - Una ambulancia, ¿por qué?
+        <td>
+          - Le quedan seis meses de vida. <br>
+          - Quiero una segunda opinión, doctor. <br>
+          - Y además se está quedando calvo. <br>
+        </td>
+        <td>
+          - Doctor, me duele esta pierna. <br>
+          - Eso es cosa de la edad. <br>
+          - Ya, doctor, pero esta otra pierna tiene la misma edad y no me duele...
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Sección identificativa de Malentendidos -->
+<div id="malentendidos">
+  <!-- Encabezado tipo 3-->
+  <h3>Malentendidos</h3>
+  <!-- Lista ordenada con sus atributos correspondientes mirar captura-->
+  <ol type="I" reversed style="line-height: 200%;">
+    <li>- Buenos días. Busco trabajo. - ¿Le interesa de jardinero? - ¿Dejar dinero? ¡Si lo que busco es trabajo!</li>
+    <li>- Van dos ciegos y le dice uno al otro: - Ojalá lloviera. - Ojalá yo también.</li>
+    <li>- Soldado Antúnez. - Sí, mi capitán. - Ayer no le vi en las prácticas de camuflaje. - ¡Gracias, mi capitán!</li>
+  </ol>
+</div>
+
+<!-- Sección identificativa de otros chistas -->
+ <div id="otros">
+  <!-- Crear un encabezado de tamaño 3 que ponga otros chistes y el emoji #128512 y una lista no ordenada cuyo id sea extras -->
+  <h3>Otros chistes &#128512;</h3>
+  <!--Crear formulario con esta cabecera -->
+  <form method="POST" onsubmit="return anade(this);">
+    <!-- Crear un campo textarea cuyo atributo name sea chiste  y una etiqueta que ponga chiste nuevo-->
+    <label for="chiste">Chiste nuevo</label><br>   
+    <textarea name="chiste" id="chiste_nuevo" rows="8" cols="40"></textarea><br><br>
+    <!-- Crear un input type submit cuyo botón ponga añadir-->
+    <button type="submit">Añadir</button>
+  </form>
+</div>
+
+<!-- Crear el bloque pie -->
+<footer>
+  <!--Crear un svg de 200x200 con un círculo de centro 70 70 radio 40  y ancho de stroke 40-->
+  <svg width="200" height="200">
+    <circle r="40" cx="70" cy="70" fill="yellow" stroke="green" stroke-width="40"/>
+  </svg>
+</footer>
+
+</body>
+</html>

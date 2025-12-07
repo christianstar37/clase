@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres Columnas de Texto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .column {
+            width: 20%; /* Cada columna ocupa el 20% del ancho del contenedor */
+        }
+
+        .column p {
+            text-align: justify;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="column">
+            <h2>Columna 1</h2>
+            <p>
+                Este es el contenido de la primera columna. Aquí puedes añadir cualquier texto que desees. Este diseño con tres columnas es útil cuando deseas dividir el contenido en partes más pequeñas y hacer que cada sección sea fácil de leer. 
+            </p>
+            <p>
+                Puedes organizar tu información en partes claramente separadas pero relacionadas, para que el lector pueda entender el contenido de manera más fluida.
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>Columna 2</h2>
+            <p>
+                Este es el contenido de la segunda columna. Las tres columnas se distribuyen uniformemente usando flexbox. Puedes ajustar el tamaño de las columnas fácilmente modificando el ancho, para que se adapten a la cantidad de contenido que quieres incluir en cada una.
+            </p>
+            <p>
+                Esta es otra forma de mejorar la presentación visual de la información, permitiendo que el contenido no esté amontonado en un solo bloque.
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>Columna 3</h2>
+            <p>
+                Este es el contenido de la tercera columna. Puedes usar esta columna para añadir más información o detalles adicionales relacionados con los temas de las primeras dos columnas. Al dividir el contenido en varias secciones, es más fácil para el usuario centrarse en una parte a la vez.
+            </p>
+            <p>
+                El diseño con tres columnas también es ideal para mostrar comparaciones o diferentes aspectos de un mismo tema.
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>Columna 4</h2>
+            <p>
+                Aquí está el contenido de la cuarta columna. Para crearla he añadido una división más y he cambiado desde el style de la clase column el ancho de un 30% a un 20%.
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, deserunt impedit similique blanditiis commodi maxime fuga quis enim esse dignissimos.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

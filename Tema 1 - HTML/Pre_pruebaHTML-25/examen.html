@@ -1,0 +1,237 @@
+<!-- 
+    El enuciado de su examen se encuentra en los comentarios, siga las instrucciones para obtener las puntuaciones
+    1.- Definir el DOCTYPE del documento. (1P)
+        Crear la cabecera conlas siguientes especificaciones
+        * el lenguaje usado por defecto será en español 
+        * el conjunto de caractéres se establecerá como UTF-8 de forma explícita
+        * el título del documento será "Examen de Nombre del alumno"     
+    -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen de Christian</title>
+  <style>
+
+    body {
+      font-family: arial, sans-serif;
+    }
+    
+    main table, main th, main td {
+      border: 1px solid black;
+    }
+
+
+    iframe {
+      width: 900px;
+      height: 300px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 
+     2.-  Creación de la estructura del documento: (0,5 P)
+         * Cree tres elementos de bloque de agrupación por defecto 
+           atributos de identificación sean, Cabecera, Cuerpo y Pie.
+         * Separe las tres seccines mediante una línea de separación.
+     
+     3.- En el bloque identificado como Cabecera:  (1P)
+         * Cree una tabla que tenga un ancho de 800px con una fila y dos  columnas 
+         *  la primera columna ocupe 650 px y tenga un encabezado con el
+            mismo mensaje que puso en el título de la página.
+         * La segunda columna ocupará  el resto y contendrá un enlace con la imagen
+           logo.jpg que le adjunto en la carpeta multimedia, y que lleve a
+           https://www.juntadeandalucia.es/averroes/centros-tic/18007046/helvia/sitio/
+  -->
+
+<header id="Cabecera">
+  <table style="width: 800px;">
+    <thead>
+      <tr>
+        <th style="width: 650px;"><h1>Examen de Christian</h1></th>
+        <th>
+          <a href="https://www.juntadeandalucia.es/averroes/centros-tic/18007046/helvia/sitio/">
+            <img src="multimedia/logo.jpg" alt="Logo">
+          </a>
+        </th>
+      </tr>
+    </thead>
+  </table>
+</header>
+<hr>
+<main id="Cuerpo">
+
+  <!--
+     
+     4.- En el bloque identificado como cuerpo
+        * Cree una  lista ordenada mediante letras minúsculas en orden inverso
+          donde enumere los tipos de listas. Antes de los elementos debe tener un 
+          encabezado de tipo 5 con el mensaje "Tipos de listas".(0,5 P)
+        * Cree el caligrama que le propongo de tal forma que salga con la forma que le pongo a continuación (0,5P)
+                
+                Un
+              barquito
+            de cascara de
+          nuez adornado con
+                ve-
+                la
+                de
+                pa-
+                pel
+      se hizo hoy a la mar para
+       lejos llevar gotitas 
+         doradas de miel          
+       
+      * Incorpore la imagen tablas.png que encontrará en multimedia con un figcaption que ponga "tablas ejemplo"
+      * Cree las tablas con los atributos necesarios para que queden como "tablas ejemplo". Use el atributo border="1px" 
+        para que se vean los bordes de la tabla. (2P)
+
+      * Incruste el contenido de la web https://bibliofjburgos.blogspot.com/  con un ancho de 900 y un alto de 300 (1P)
+
+      * Cree un formulario de autenticación, el método de envío serar POST, en evento onsubmit="return false;".
+        rellene los campos con los atributos correspondientes como si fuesen a ser enviados al servidor. (2P)
+          * Cada Campo con su etiqueta asociada. Cada campo y su etiqueta en líneas distintas.
+          * Campo login: tipo texto mínimo 8 caracteres máximo 12 caracteres.
+          * Campo password: tipo password aplicando esta expresión regular ^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+          * Campo select que tenga tres opciones :invitado,usuario o administrador
+          * Campo entrar: tipo submit y que se vea entrar como mensaje del botón 
+      
+
+  -->
+
+<h5>Tipo de listas</h5>
+<ol type="a" reversed>
+  <li>Listas ordeandas (Ordered Lists) &lt;ol&gt;</li>
+  <li>Listas desordenadas (Unordered Lists) &lt;ul&gt;</li>
+  <li>Listas de definición &lt;dl&gt;</li>
+</ol>
+<br>
+<pre>
+              Un
+            barquito
+          de cascara de
+        nuez adornado con
+              ve-
+              la
+              de
+              pa-
+              pel
+    se hizo hoy a la mar para
+      lejos llevar gotitas 
+        doradas de miel       
+</pre>
+<br>
+<figcaption><img src="multimedia/tablas.png" alt="tablas ejemplo"></figcaption>
+<br>
+<table>
+  <caption>Tabla 5</caption>
+  <tbody>
+    <tr>
+      <td rowspan="2">gubergren</td>
+      <td colspan="2">no</td>
+    </tr>
+    <tr>
+      <td>sea</td>
+      <td rowspan="2">takimata</td>
+    </tr>
+    <tr>
+      <td colspan="2">sanctus</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table>
+  <caption>Tabla 6</caption>
+  <tbody>
+    <tr>
+      <td rowspan="5">Duis</td>
+      <td colspan="3">autem</td>
+      <td rowspan="5">vel</td>
+    </tr>
+    <tr>
+      <td rowspan="3">eum</td>
+      <td>iriure</td>
+      <td rowspan="3">dolor</td>
+    </tr>
+    <tr>
+      <td>in</td>
+    </tr>
+    <tr>
+      <td>hendrerit</td>
+    </tr>
+    <tr>
+      <td colspan="3">in</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br><br>
+<iframe src="https://bibliofjburgos.blogspot.com/" frameborder="0"></iframe>
+<br><br>
+
+
+<form method="POST" onsubmit="return false;">
+  <label for="usuario">Login (8-12 caracteres)</label><br>
+  <input type="text" required minlength="8" maxlength="12"><br>
+  <br>
+  <label for="contraseña">Password</label><br>
+  <input type="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"><br>
+  <br>
+  <label for="rol">Rol</label><br>
+  <select name="rol" id="rol">
+    <option value="inv">Invitado</option>
+    <option value="user">Usuario</option>
+    <option value="admin">Administrador</option>
+  </select>
+  <br><br>
+  <button type="submit">Entrar</button>
+
+</form>
+</main>
+<hr>
+<footer id="Pie"></footer>
+
+  <!--
+      5.- En el bloque identificado como pie (1,5P)
+         * Cree una tabla con una fila y tres celdas:
+         * la primera y la última tendran que ser de 100px de ancho y 150px de alto  
+         * la de la izquierda ponga la bandera de España creada con un gráfico svg
+         * la de la derecha  ponga la bandera de Andalucía creada con un gráfico svg.
+         * En la del centro ponga un párrafo que contenga "¡Sea por Andalucía libre, España y la Humanidad!" y un audio 
+           con el recurso que tiene en multimedia llamado andalucia-coral.mp3 
+      
+  -->
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <td style="width: 100px; height: 150px;">
+        <svg style="width: 100px; height: 150px;">
+          <rect width="100px" height="50px" fill="red"></rect>
+          <rect width="100px" height="50px" fill="yellow" y="50"></rect>
+          <rect width="100px" height="50px" fill="red" y="100"></rect>
+        </svg>
+      </td>
+      <td align="center">
+        <p>¡Sea por Andalucía libre, España y la Humanidad!</p>
+        <audio controls>
+            <source src="multimedia/andalucia-coral.mp3">
+        </audio>
+      </td>
+      <td style="width: 100px; height: 150px;">
+        <svg style="width: 100px; height: 150px;">
+          <rect width="100px" height="50px" fill="green"></rect>
+          <rect width="100px" height="50px" fill="white" y="50"></rect>
+          <rect width="100px" height="50px" fill="green" y="100"></rect>
+        </svg>
+      </td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

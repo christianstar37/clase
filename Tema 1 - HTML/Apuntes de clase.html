@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes de clase</title>
+</head>
+<body>
+    <main>
+        <h1>Apuntes de clase: Lenguaje de la web: <abbr title="HyperText Markup Languaje">HTML</abbr> y <abbr title="eXtensible HyperText Markup Languaje">XHTML</abbr>.</h1>
+    </main>
+    <p>Para usar estos apuntes, debe ver tanto su visualización en el navegador, como su código desde un editor o desde el propio navegador (botón derecho del ratón -> menú contextual -> ver código fuente).</p>
+    <p>La estructura HTML, como el lenguaje de marcas, está basada en un conjunto de etiquetas que pueden contener atributos. De esta forma, la estructura que tendrán las etiquetas de forma genérica en su sintaxis será la siguiente:</p>
+    <p>&lt;Nombredelaetiqueta nombredelatributo1="valor del atributo1" ... nombredelatributoN=valor del atributoN"&gt;Información contenida en la etiqueta &lt;/nombredelaetiqueta&gt; </p>
+    <p>HTML es para la representación de información y estructura en la web. Pero necesita otros lenguajes para lo siguiente:</p>
+    <ul>
+        <li>Visualización o estilo: se hace desde CSS.</li>
+        <li>Interacción con el usuario; con el modelo de atributos de evento, junto con lenguaje de programación JavaScript.</li>
+    </ul>
+    <p>Ejemplos del modelo de eventos: cuando hacemos click en el botón, sale una ventana de alerta con mensaje.</p>
+    <button  onclick="alert('Esto es un botón.'); " >Información</button> 
+    <p><b>Encabezados de distintos niveles:</b></p>
+    <h1>Encabezado de primer nivel</h1>
+    <h2>Encabezado de segundo nivel</h2>
+    <h3>Encabezado de tercer nivel</h3>
+    <h4>Encabezado de cuarto nivel</h4>
+    <h5>Encabezado de quinto nivel</h5>
+    <h6>Encabezado de sexto nivel</h6>
+    <h3>Atributo contenteditable</h3>
+    <p contenteditable="true"><i>Editable</i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde enim sapiente, amet cumque provident at ullam inventore illum dolores earum quaerat sed illo culpa, labore nostrum fugit sequi dolorum quis laboriosam ut hic a. Officiis, perferendis. Iure, velit excepturi.</p>
+    <h3>Texto mediante separador etiqueta: &lt;hr&gt;</h3>
+    <p><i>Separador</i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo mollitia ipsam quibusdam voluptatem repellat beatae nulla enim earum error provident.</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sit incidunt aperiam nemo autem corrupti delectus nostrum iusto laborum ad.</p>
+    <h3>Lista de definición</h3>
+<!--Preguntar cómo hacer esta parte-->
+    <dl>
+        <dt>
+            <dd>Etiqueta dl: bloque de lista de definición.</dd>
+            <dd>Etiqueta dt: Término de definición.</dd>
+            <dd>Etiqueta dd: La propia definición.</dd>
+        </dt>
+        <br>
+        <dt>
+            Término
+            <dd>
+                Definición del término.
+            </dd>
+        </dt>
+        <br>
+        <dt>
+            <dd>   
+            <dd><b>Etiqueta ol: bloque de lista ordenada.</b></dd>
+            <dd><b>Etiqueta ul: bloque de lista sin orden.</b></dd>
+            <dd><b>Etiqueta li: elementos de la lista</b></dd>
+        </dt>
+    </dl>
+    <br>
+    <p>Lista ordenada normal</p>
+    <ol>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ol>
+    <p>Lista sin orden</p>
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ul>
+    <p>Lista ordenada con numeración de letras empezando por la c</p>
+    <ol type="a" start="3">
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ol>
+    <h3>Un párrafo con la etiqueta: &lt;p&gt;</h3>
+    <p>Me creo un texto con muchos espacios                  con un tabulador y          con varios
+    saltos de línea aquí                
+    finaliza mi párrafo.</p>
+    <h3>Texto preformateado con la etiqueta: &lt;pre&gt;</h3>
+    <hr>
+    <pre>Me    creo  un párrafo     con  muchos espacios   con un   tabulador      y  con
+        varios          saltos
+        de                                      línea aquí finaliza mi                  preformateado.
+    </pre>
+    <h3>Directamente en el &lt;body&gt; sin ninguna etiqueta</h3>
+    <hr>
+    Me creo un texto        con muchos espacios             con un tabulador y
+    con varios saltos       de línea
+    aquí    finaliza        mi texto        directo     
+    en      el body.
+    <h3>Etiqueta de salto de línea sin cierre: &lt;br&gt;</h3>
+    <br>
+    <h3>Contenido incrustado y multimedia</h3>
+    <p>Imágenes Etiquetas relacionadas: img sin cierre con su atributo src.</p>
+    <p>Podemos ponerla dentro de un elemento de bloque <i>figure</i> con la etiqueta <i>figcaption</i> que le pondrá un pie de imagen.</p>
+    <figure>
+        <img src="https://thumbs.dreamstime.com/b/pera-7682120.jpg" style="width: 200px;">
+        <figcaption>La Pera Limonera</figcaption>
+    </figure>
+    <hr> 
+<!--He decidido poner aquí una línea ya que viene un título en grande-->
+    <h1>Internet</h1>
+    <h2>Contenido</h2>
+    <ol>
+        <li>Principales protocolos</li>
+        <li>Formas de conectarse</li>
+    </ol>
+    <!--Preguntar si hay alguna forma de hacerlo sin el start="2"-->
+    <hr>
+    <ol>
+        <h2><li>Principales protocolos</h2></li>
+    <ul>
+        <li>Transmisión de ficheros</li>
+        <ul>
+            <li>FTP</li>
+        </ul>
+        <li>Correo electrónico</li>
+        <ul>
+            <li>IMAP</li>
+            <li>POP</li>
+            <li>SMTP</li>
+        </ul>
+    </ul>
+        <h2><li>Formas de conectarse</li></h2>
+    </ol>
+    <hr>
+    <ol>
+        <h2><li>Principales protocolos</h2></li>
+    </ol>
+    <ul>
+        <li>Transmisión de ficheros</li>
+        <ul>
+            <li>FTP</li>
+        </ul>
+        <li>Correo electrónico</li>
+        <ul>
+            <li>IMAP</li>
+            <li>POP</li>
+            <li>SMTP</li>
+        </ul>
+    </ul>
+    <ol start="2">
+        <h2><li>Formas de conectarse</li></h2>
+    </ol>
+    <dl>
+        <dt>Red Telefónica Conmutada (RTC)</dt>
+            <dd>La línea telefónica de toda la vida. Para acceder a Internet es necesario un módem.</dd>
+        <dt>Red Digital de Servicios Integrados (RDSI)</dt>
+            <dd>Una línea telefónica especial. Para acceder a Internet es necesario un módem RDSI.</dd>
+        <dt>Línea de Abonada Digital Asimétrica (ADSL)</dt>
+            <dd>Se basa en la conversión de una línea RTC a una línea de alta velocidad. Para acceder a Internet es necesario un módem ADSL.</dd>
+        <dt>Fibra óptica</dt>
+            <dd>Una línea de fibra óptica. Normalmente, la fibra óptica no llega hasta el usuario final, por lo que el término más apropiado es fibra híbrida coaxial.</dd>
+    </dl>
+    <hr>
+    <h3>Formularios</h3>
+    <p>El lenguaje de HTML no solamente sirve para presentar información, también es usado para enviar datos a través de él al servidor o a algún servicio concreto.</p>
+    <h3>Etiqueta &lt;form&gt;</h3>
+    <p>Tiene unos atributos destacados en base a su funcionalidad:
+    <br>Atributo <i>method</i>: Define la forma de comunicación con el protocolo por defecto usado (normalmente HTTP) y su valor por defecto es GET (envía los datos en la cabecera del paquete), POST (envía los datos en el cuerpo del paquete).
+    <br>Atributo <i>action</i>: Vamos a poner el esquema y receptor de los datos enviados por el formulario; por defecto será el protocolo HTTP y la misma página donde estoy. 
+    <br>Atributo <i>onsubmit</i>: Es un atributo de evento, es decir, que podremos definir ejecuciones JavaScript. Para cortar el envío de datos, le daremos el valor "return false;".</p>
+    <h3>Etiquetas &lt;input&gt; y &lt;label&gt;</h3>
+    <h4>Etiqueta <i>&lt;label&gt;</i></h4>
+    <p>Acompaña información a los campos de interacción, su atributo más importante es <i>for</i> que nos dice a qué campo de interacción se aplica mediante el id del campo.</p>
+    <h4>Etiqueta <i>&lt;input&gt;</i></h4>
+    <p>Son campos de datos para el usuario.</p>
+    <p>Sus atributos más importantes son:</p>
+    <p>Atributo <i>type</i>: Define el dato que obtenemos del campo de datos, por defecto es text, pero podemos poner: button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week.
+    <br>Atributo <i>name</i>: Es importante para la comunicación, ya que el nombre del dato que se envía corresponde a lo que pongamos en este atributo.
+    <br>Atributo <i>value</i>: Será el valor por defecto de un campo de entrada.
+    <br>Atributo <i>pattern</i>: Significa que no dejará enviar los datos y los marcará como erróneos si no cumple el patrón o la expresión regular de este atributo. Tiene sentido en los campos de texto.
+    <br>
+    <form>
+        
+        <label for="texto">entrada texto</label><br>
+        <input type="text" name="texto" id="texto"></input><br><br>
+
+        <label for="DNI">campo texto con patrón DNI</label><br>
+        <input type="text" name="DNI" id="DNI" pattern="\d{8}[A-Z]" placeholder="12345678A"><br><br>
+<!--Son todas estas etiquetas necesarias?? method, action, submit y for. Al menos para estos ejemplos, de qué sirven?
+    Otra duda, cómo se cambiaría el color base del input type="color"?-->
+        <label for="color">color</label><br>
+        <input type="color" name="color" id="color"><br><br>
+
+        <label for="fecha">fecha</label><br>
+        <input type="date" name="fecha" id="fecha"><br><br>
+
+        <label for="fecha hora">fecha hora</label><br>
+        <input type="datetime-local" name="fecha hora" id="fecha hora"><br><br>
+
+<!--He usado el datetime-local en vez del datetime porque por lo visto ya no está soportado en la mayoría de los navegadores modernos-->
+
+        <label for="email">email</label><br>
+        <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" pattern=""><br><br>
+
+        <label for="archivo">archivo</label><br>
+        <input type="file" name="archivo" id="archivo"><br><br>
+
+        <label for="imagen">imagen</label><br>
+        <input type="image" name="image" id="imagen"><br><br>
+
+        <label for="mes">mes</label><br>
+        <input type="month" name="mes" id="mes"><br><br>
+
+<!--En el número, usamos el type="number" o el de text y usamos un patrón de números?-->
+        <label for="número">número</label><br>
+        <input type="number" name="número" id="número" pattern="{6,12}"><br><br>
+
+        <label for="contraseña">contraseña</label><br>
+        <input type="password" name="contraseña" id="contraseña"><br><br>
+
+        <label for="rango">range</label><br>
+        <input type="range" name="rango" id="rango"><br><br>
+
+        <label for="reset">botón reset</label><br>
+        <input type="reset" name="reset" id="reset"><br><br>
+
+        <label for="búsqueda">búsqueda</label><br>
+        <input type="search" name="búsqueda" id="búsqueda"><br><br>
+
+        <label for="teléfono">teléfono</label><br>
+        <input type="tel" name="teléfono" id="teléfono" pattern="\d{9}|\d{3} \d{3} \d{3}|\d{3} \d{2} \d{2} \s{2}" placeholder="123 45 67 89"><br><br>
+
+        <label for="hora">hora</label><br>
+        <input type="time" name="hora" id="hora"><br><br>
+
+        <label for="url">url</label><br>
+        <input type="url" name="url" id="url"><br><br>
+
+        <label for="semana">semana</label><br>
+        <input type="week" name="semana" id="semana"><br><br>
+
+        <p>Etiqueta <i>&lt;fieldset&gt;</i>: Una agrupación de campos normalmente usada para radiobutton y checkbox que, junto con la etiqueta <i>legend</i>, me dará un cuadro y una descripción con campos en su interior.</p>
+        <fieldset>
+            <legend>botones de radio</legend>
+            <input type="radio"><br>
+            <label for="Hombre">Hombre</label><br>
+            <input type="radio"><br>
+            <label for="Mujer">Mujer</label>
+        </fieldset>
+            <br>
+        <fieldset>
+            <legend>botones de check</legend>
+            <input type="checkbox"><br>
+            <label for="Hombre">Hombre</label><br>
+            <input type="checkbox"><br>
+            <label for="Mujer">Mujer</label>
+        </fieldset>
+        
+        <p>Etiqueta <i>select</i></p>
+        <p>Contituye una alternativa a los radiobutton o a los checkbox mediante una lista desplegable con la etiqueta <i>option</i> en su interior.</p>
+        
+        <label for="coche simple">marcas de coche select simple</label><br>
+        <select name="coche" id="coche">
+            <option value="seat">seat</option>
+            <option value="opel">opel</option>
+            <option value="bmv">bmv</option>
+        </select><br><br>
+        
+        <label for="coche multiple">marcas de coche select multiple</label><br>
+        <select name="coche" id="coche" multiple>
+            <option value="seat">seat</option>
+            <option value="opel">opel</option>
+            <option value="bmv">bmv</option>
+        </select><br><br>
+        
+        <p>Etiqueta <i>select</i></p>
+        <p>Define un área para texto de forma que podremos tener múltiples líneas y párrafos en su interior.</p>
+        
+        <label for="textarea">textarea</label><br>
+        <textarea name="textarea" id="textarea" placeholder="Escribe tus comentarios aquí." rows="8" cols="40"></textarea><br>
+        
+        <button type="submit">enviar</button>        
+    </form>
+</body>
+</html>

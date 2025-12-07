@@ -1,0 +1,15 @@
+
+    body {
+        font-size: 30px;
+    }
+
+    @font-face {
+        font-family: Mi_primera_fuente;
+        src: url("Fuentes/Vanilla\ Pancake.ttf") format(TrueType);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    #vanilla_pancake {
+        font-family: Mi_primera_fuente;
+    }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de Página</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #c0d0e0;
+        }
+        
+        header, footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-weight: bold;
+        }
+        
+        header {
+            background: linear-gradient(to right, #b1b1b1, #ffffff); /* naranja a amarillo */
+        }
+        
+        footer {
+            background-color: #ffcc00; /* amarillo */
+            color: black;
+        }
+        
+        main {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        
+        aside {
+            width: 25%;
+            color: white;
+            background-color: #3b78e7;
+            box-sizing: border-box;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        section {
+            width: 75%;
+            background-color: #3b78e7; /* azul */
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            font: 20px arial, sans-serif;
+            text-align: center; 
+        }
+        
+        article {
+            background-color: #a0a0a0; /* gris */
+            color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        aside img {
+            max-width: 92%;  
+            height: auto;
+            margin: 5% 0px 0px 0px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://static.elpais.com/dist/resources/images/logos/primary/el-pais.svg" class="ep_i" alt="EL PAÍS" width="200" height="50">
+    </header>
+    <main>
+        <aside>
+            <a href="https://www.nescafe.com/es"><img src="https://i.pinimg.com/564x/ac/73/81/ac73819fe7bcc5b2ac1104ba0643576b.jpg" alt="Publidad de Nescafé."></a>
+            <a href="https://www.nike.com/es"><img src="https://i.pinimg.com/originals/ca/df/8d/cadf8de87c46bbc5c60199f94196aca9.jpg" alt="Publidad de Nike."></a>
+            <a href="https://www.coca-cola.com/es/es"><img src="https://www.inboundcycle.com/hs-fs/hubfs/anuncios%20publicitarios%20recordatorios.jpg?width=480&height=600&name=anuncios%20publicitarios%20recordatorios.jpg" alt="Publidad de Coca-Cola."></a>
+        </aside>    
+        <section>
+        <h2>ARTÍCULOS DESTACADOS</h2>
+            <article id="gasolinera">
+                <a href="https://www.rtve.es/noticias/20251023/gasolineras-automaticas-ganan-terreno-espana-multiplican-cuatro-2019/16782270.shtml">
+                    <h3>Las gasolineras automáticas ganan terreno en España y ya alcanzan el 29% del mercado</h3>
+                    <img src="https://img.rtve.es/i/gasolineras-automaticas-ganan-terreno-espana_01761154748246.jpg" alt="Gasolinera automática" style="width: 100%;">
+                </a>
+            </article>
+            <article id="hora">
+                <a href="https://www.rtve.es/noticias/20251017/cuando-es-cambio-hora-octubre-2025/16773360.shtml">
+                    <h3>¿Cuándo es el cambio de hora en octubre de 2025 y pasamos al horario de invierno? ¿Dormimos más o menos?</h3>
+                    <img src="https://img2.rtve.es/i/?w=1600&i=01760610881904.jpg" alt="Relojes, cambio de hora" style="width: 100%;">
+                </a>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        Suscríbete desde nuestra página web oficial para mantenerte actualizado de todas las noticias. <br>
+        2025 RTVE Y EL PAÍS S.L.a
+    </footer>
+</body>

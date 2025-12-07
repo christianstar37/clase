@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Chistes. Examen. Páginas web HTML y hojas de estilo CSS. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <style>
+
+    body {
+      display: flex;
+      background-color: #d5b6ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    aside {
+      background-color: #5c0fa8;
+      height: 100vh;
+      width: 2%;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      font-size: large;
+      border-right: 3px dashed black;
+    }
+
+    main {
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      background-color: #c7a4ff;
+      padding: 15px;
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+    }
+
+    header > a {
+      background-color: #e7d7ff;
+      color: #7b3abe;
+      margin: 0 15px;
+      height: 150%;
+      display: flex;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+      font-family: arial, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px dashed #7b3abe;
+    }
+
+    div {
+      margin-left: 5px;
+    }
+
+    hr {
+      border: 1px solid #7b3abe;
+      margin-right: 10%;
+    }
+
+    .chistes {
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      height: 140px;
+    }
+    .chistes > div {
+      background-color: white;
+      margin: 10px; 
+      padding: 10px;
+      border: 2px solid #7b3abe;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #7b3abe;
+      font-family: lobster, cursive;
+    }
+
+    p {
+      font-size: small;
+      line-height:160%;
+      font-family: Helvetica, sans-serif;
+    }    
+  </style>
+</head>
+<body>
+  <!--Cómo puedo modificar la altura de aside para que ocupe toda la pantalla de alto?-->
+
+  <!--Aquí va primero un aside para el contenido lateral de la izquierda-->
+  <aside>
+    &#128191;
+  </aside>
+
+  <!--Aquí va el main para diferenciarlo del aside junto con todo el resto del contenido de la página-->
+  <main>
+    <!--Aquí va la cabecera junto con los enlaces de cada sección-->
+    <header>
+      <a href="#medico">MÉDICOS</a>
+      <a href="#informatica">INFORMÁTICA</a>
+      <a href="#camarero">CAMAREROS</a>
+    </header>
+
+    <!--Aquí va la parte de los chistes junto a sus títulos cada parte está dividida en divisiones y esas divisiones divididas en otras por cada chiste-->
+    <div>
+      <div class="title">
+        <h1 id="medico">MÉDICOS</h1>
+        <hr>
+      </div>
+      <div class="chistes">
+        <div>
+          <p>
+            - No sé qué me pasa, doctor, pero en seguida pierdo los nervios y me pongo a insultar a todo el mundo.
+            <br>
+            - Está bien, cuéntemelo todo.
+            <br>
+            - ¿Y qué cree que estoy haciendo, pedazo de imbécil?
+          </p>
+        </div>
+        <div>
+          <p>
+            - Doctor, soy asmático, ¿es grave?
+            <br>
+            - No, es esdrújula.
+          </p>
+        </div>
+        <div>
+          <p>
+            Un hombre llega a la consulta del psicólogo y dice:
+            <br>
+            - Doctor, tengo un gran complejo de superioridad.
+            <br>
+            - A ver, siéntese y le ayudaremos.
+            <br>
+            - ¡Tú qué me vas a ayudar, doctorcillo de pacotilla!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="title">
+        <h1 id="informatica">INFORMÁTICA</h1>
+        <hr>
+      </div>
+      <div class="chistes">
+        <div>
+          <p>
+            ¿Qué le dice un gif a un jpg?
+            <br>
+            - ¡Anímate, hombre!
+          </p>
+        </div>
+        <div>
+          <p>
+            Hay 10 tipos de personas: los que saben binario y los que no.
+          </p>
+        </div>
+        <div>
+          <p>
+            ¿Qué le dice una impresora a otra?
+            <br>
+            - ¿Esa hoja es tuya o es impresión mía?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="title">
+        <h1 id="camarero">CAMAREROS</h1>
+        <hr>
+      </div>
+      <div class="chistes">
+        <div>
+          <p>
+            - ¿Vino blanco, el señor?
+            <br>
+            - No, no... Ha sido al ver los precios.
+          </p>
+        </div>
+        <div>
+          <p>
+            - Camarero, ponga una de calamares a la rumana, por favor.
+            <br>
+            - Será a la romana.
+            <br>
+            - Irina, cariño, dile al listillo este de dónde eres...
+          </p>
+        </div>
+        <div>
+          <p>
+          - ¿Me cobra el café por favor?
+            <br>
+          - ¿Un billete de 100? ¿No tiene otro billete?
+            <br>
+          - ¿Pero cuánto cuesta el café aquí?
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

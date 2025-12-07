@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario sin estilo</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form>
+        
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="20" placeholder="Ingresa tu nombre"><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com"><br><br>
+
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" required min="10" max="100"><br><br>
+
+        <label for="contraseña">Contraseña:</label><br>
+        <input type="password" name="contraseña" id="contraseña" required><br><br>
+
+        <label for="país">País:</label><br>
+        <select name="pais" id="país" required>
+            <option value="">Seleccione su país</option>
+            <option value="mx">México</option>
+            <option value="es">España</option>
+            <option value="fr">Francia</option>
+            <option value="pt">Portugal</option>
+            <option value="co">Colombia</option>
+        </select><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
