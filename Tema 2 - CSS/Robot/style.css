@@ -1,0 +1,100 @@
+
+
+body {
+    background-image: linear-gradient(135deg,#91acf9, #9e98f5);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+main {
+    display: grid;
+}
+
+#titulo::before, #titulo::after {
+    content: "\1F916";
+}
+
+#titulo:hover::before, #titulo:hover::after {
+    content: "\1F916";
+    font-size: 2em;
+}
+
+#robot:hover {
+    font-size: 2em;
+}
+
+#subtitulo {
+    color: lightgrey;
+    font-size: 24px;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.robot {
+    border: black solid 4px;
+    border-radius: 20px;
+    width: 22%;
+    display: grid;
+    align-self: center;
+    margin: 4%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 2%;
+}
+
+.robot:hover {
+    width: 30%;
+    height: 30%;
+    font-size: 2em;
+}
+
+#rojo {
+    background-color: #b33636;
+}
+
+#rojo:hover {
+    background-color: coral;
+}
+
+#azul {
+    background-color: #5478dc;
+}
+
+#azul:hover {
+    background-color:skyblue;
+}
+
+#verde {
+    background-color: #67b492;
+}
+
+#verde:hover {
+    background-color: yellowgreen;
+}
+
+#info > a:link {
+    color: pink;
+}
+
+#info > a:active {
+    color: red;
+}
+
+#info > a:focus {
+    color: green;
+}
+
+#info > a:hover {
+    color: white
+}
+
+#info > a:visited {
+    color: yellow
+}
