@@ -1,0 +1,14 @@
+/*
+ * El Pie ocupará el 10% de la página 
+ * El párrafo estará flotando a la derecha y a la mitad de tamaño de letra
+ * del normal (1p)
+ * 
+ * 
+ */ 
+
+footer {
+    border-top: black solid 1px;
+    height: 10%;
+    font-size: 0.5em;
+    text-align: right;
+}

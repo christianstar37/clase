@@ -1,0 +1,177 @@
+<!-- 
+    Parte 1 :HTML Contará para subir nota y/o recuperar la unidad 2  y si no lo hace bien, no podrá aplicar las reglas css
+    ------------
+    El enuciado de su examen se encuentra en los comentarios, siga las instrucciones para obtener las puntuaciones
+    1.- Definir el DOCTYPE del documento.
+        Crear la cabecera conlas siguientes especificaciones
+        * el lenguaje usado por defecto será en español 
+        * el conjunto de caractéres se establecerá como UTF-8 de forma explícita
+        * el título del documento será "Examen de Nombre del alumno"   
+        * cargar los archivos ./estilos/cabecera.css ./estilos/cuerpo.css ./estilos/pie.css 
+    -->
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen de Christian</title>
+  <link rel="stylesheet" href="estilos/cabecera.css">
+  <link rel="stylesheet" href="estilos/cuerpo.css">
+  <link rel="stylesheet" href="estilos/pie.css">
+</head>
+<body>
+
+<!-- 
+  2.-  Creación de la estructura del documento:
+      * Cree tres elementos de bloque de agrupación por defecto div 
+        atributos de identificación sean, Cabecera, Cuerpo y Pie.
+
+
+  3.- En el bloque de cabecera identificado como Cabecera: 
+      * Cree una etiqueta p con su nombre y apellidos como hizo en el título
+      * Inserte un enlace con la imagen ./multimedia/logo.jpg como un enlace a  
+      https://www.juntadeandalucia.es/averroes/centros-tic/18007046/helvia/sitio/
+  -->
+
+  <header>
+    <a href="https://www.juntadeandalucia.es/averroes/centros-tic/18007046/helvia/sitio/">
+      <img src="multimedia/logo.jpg" alt="Logo del centro">
+    </a>
+    <p>Christian Castillo Díaz</p>
+  </header>
+  <main>
+  <!--
+
+  4.- Cree un bloque identificado como cuerpo
+        * Cree una  lista ordenada mediante letras minúsculas en orden inverso
+          donde enumere los tipos de listas. Antes de los elementos debe tener un 
+          encabezado de tipo 5 con el mensaje "Tipos de listas".
+        
+      * Cree una tabla  con captión de un horario vacio sólo con las horas y los días (ver formateado.png)
+        para que se vean los bordes de la tabla. 
+      * Cree un formulario de autenticación, el método de envío serar POST, en evento onsubmit="return false;".
+        rellene los campos con los atributos correspondientes como si fuesen a ser enviados al servidor. 
+          * Cada Campo con su etiqueta asociada. Cada campo y su etiqueta en líneas distintas.
+          * Campo login: tipo texto mínimo 8 caracteres máximo 12 caracteres.
+          * Campo password: tipo password aplicando esta expresión regular ^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+          * Campo select que tenga tres opciones :invitado,usuario o administrador
+          * Campo entrar: tipo submit y que se vea entrar como mensaje del botón 
+      
+
+  -->
+    <div id="listas">
+      <h5>Tipos de listas</h5>
+      <ol type="a" reversed>
+        <li>Ordenada</li>
+        <li>Desordenada</li>
+        <li>De definición</li>
+      </ol>
+    </div>
+
+    <div id="parrafo">
+      <p id="frase">"La Web no es más que texto con marcas." - Tim Berners-Lee</p>
+    </div>
+
+    <div id="tabla">
+      <table>
+        <caption>Mi horario</caption>
+          <thead>
+            <tr>
+              <th>Semana</th>
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miércoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1º hora</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2º hora</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3º hora</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="5" id="recreo">Recreo</td>
+            </tr>
+            <tr>
+              <td>4º hora</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>5º hora</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>6º hora</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+
+    <div id="formulario">
+      <form method="POST" onsubmit="return false;"></form>
+      <label for="usuario">Login</label>
+      <input type="text" required minlength="8" maxlength="12">
+      <label for="constraseña">Contraseña</label>
+      <input type="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+      <label for="tipo">Tipo</label>
+      <select name="tipo" id="rol">
+        <option value="user">Usuario</option>
+        <option value="inv">Invitado</option>
+        <option value="admin">Administrador</option>
+      </select>
+      <button type="submit">Entrar</button>
+    </div>
+
+  </main>
+  <footer>
+  <!--
+      5.- En el bloque identificado como pie 
+         * Cree un párafo que contenga: caracter de copy I.E.S. Fco. Javier de Burgos (Motril)
+      
+  -->
+  <!--
+		Una vez creada la estructura HTML cree las reglas en los archivos css correspondientes
+		para que su página se parezca lo más posible a la imagen PantallaResultado.png
+  -->
+
+    <p>&copy; I.E.S. Fco. Javier de Burgos (Motril)</p>
+
+  </footer>
+</body>
+</html>

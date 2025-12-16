@@ -1,0 +1,110 @@
+/*
+ * Este archivo css tendrá todas las reglas css aplicables sobre los 
+ * elementos del div Cuerpo
+ *  
+ * La Lista: al menos una regla usando un pseudoelemento (1,5 p)
+ * 
+ * El Párrafo: al menos una regla 
+ *             cargando la fuente que tiene en la carpeta fuentes 
+ *             y aplicándola. (1.5 p)
+ * 
+ * La tabla:  al menos una regla usando pseudoclases de posición 
+ * 	          una regla usando hover para que cambie el color de fondo en
+ * 			  las celdas sin contenido. (3 p)
+ * 
+ * Un formulario: (1p)
+ * 
+ */
+
+main {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+h5 {
+    text-decoration: underline;
+}
+
+ol {
+    text-align: center;
+}
+
+li::first-letter {
+    font-size: 1.1em;
+    color: red;
+}
+
+@font-face {
+    font-family: Fuente_Examen;
+    src: url("fuentes/KGSkinnyLove.ttf") format(TrueType);
+    font-weight: normal;
+    font-style: normal;
+}
+
+#parrafo {
+    width: 100%;
+    font-style: italic;
+    font-family: Fuente_Examen;
+    font-size: 2em;
+    border: grey solid 1px;
+}
+
+#tabla {
+    margin: 5%;
+    align-content: center;
+    display: flex;
+    width: 100%;
+}
+
+caption {
+    border: black solid 1px;
+    margin: 1%;
+    border-radius: 10px;
+    color: red;
+    padding: 5px;
+}
+
+main table, th, td {
+    border: 1px solid green;
+    border-collapse: collapse;
+}
+
+main table {
+    align-items: center;
+    width: 100%;
+}
+
+main td:hover {
+    background-color: pink;
+}
+
+main td:first-child {
+    background-color: olive;
+    color: white;
+}
+
+#recreo {
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+main th {
+    background-color: green;
+    color: white;
+}
+
+#formulario {
+    display: grid;
+    gap: 5px;
+    padding: 1%;
+    text-align: left;
+    width: 30%;
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
+button {
+    width: 80%;
+    background-color: orange;
+}

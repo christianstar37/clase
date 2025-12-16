@@ -1,0 +1,75 @@
+/* Fondo general — propiedades de fondo (Unidad 3) */
+body {
+    background: linear-gradient(130deg, #74b9ff, #a29bfe);
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* SELECTORES POR CLASE E ID — (pág. 18) */
+.titulo {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#subtitulo {
+    text-align: center;
+    color: #eee;
+    font-size: 1.2em;
+}
+
+/* MODELO DE CAJAS — (pág. 26–28) */
+.robot {
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    border: 3px solid black;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+/* COLORES DE CAJA */
+.rojo { background: #d63031; }
+.azul { background: #0984e3; }
+.verde { background: #00b894; }
+
+/* COMBINADOR DESCENDIENTE — (pág. 20) */
+.contenedor .robot:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* DISPLAY FLEX — (pág. 29–31) */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* PROPIEDADES DE ENLACES — (pág. 37) */
+a:link {
+    color: yellow;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: lime;
+}
+
+a:focus {
+    outline: 2px dashed white;
+}
+
+/* TEXTO — (pág. 35) */
+.info {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
