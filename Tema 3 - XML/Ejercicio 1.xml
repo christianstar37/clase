@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculumVitae>
+    <nombreCompleto>Christian Castillo Díaz</nombreCompleto>
+    <añoNacimiento>2001</añoNacimiento>
+    <residencia>
+        <ciudad>Motril</ciudad>
+        <pais>España</pais>
+    </residencia>
+    <datosContacto>
+        <tef>604 33 32 33</tef>
+        <correo>christian@gmail.com</correo>
+        <linkedin>Christian Castillo Díaz</linkedin>
+    </datosContacto>
+    <descripcion>Técnico de redes con conocimiento intermedio de programación.</descripcion>
+    <competencias>
+        <competencia>
+            <nombre>Hardware</nombre>
+            <nivel>Principiante</nivel>
+        </competencia>
+        <competencia>
+            <nombre>Programación en Python</nombre>
+            <nivel>Intermedio</nivel>
+        </competencia>
+    </competencias>
+    <formación>
+        <titulacion>Administrador de Sistemas Informáticos en Red</titulacion>
+        <centro>IES Francisco Javier de Burgos</centro>
+        <añoTitulacion>2021</añoTitulacion>
+    </formación>
+    <experienciaProfesional>
+        <trabajo>
+            <puesto>Técnico de sistemas</puesto>
+            <empresa>La Palma</empresa>
+            <inicioFin>2023-2024</inicioFin>
+        </trabajo>
+    </experienciaProfesional>
+</curriculumVitae>

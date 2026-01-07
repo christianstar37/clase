@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas>
+    <persona>
+        <nombre>Rocío</nombre>
+        <edad>24</edad>
+    </persona>
+    <persona>
+        <nombre>Aitor</nombre>
+        <edad>22</edad>
+    </persona>
+    <persona>
+        <nombre>Eli</nombre>
+        <edad>31</edad>
+    </persona>
+    <persona>
+        <nombre>Adrián</nombre>
+        <edad>19</edad>
+    </persona>
+    <persona>
+        <nombre>Juán</nombre>
+        <edad>25</edad>
+    </persona>
+</personas>

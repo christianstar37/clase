@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viajeTuristico>
+    <clientes>
+        <cliente>
+            <nombreCompleto>Christian Castillo Díaz</nombreCompleto>
+        </cliente>
+        <cliente>
+            <nombreCompleto>Aitor Pérez Fernández</nombreCompleto>
+        </cliente>
+    </clientes>
+    <fechaInicio>12-09-2024</fechaInicio>
+    <fechaFin>16-09-2024</fechaFin>
+    <origenViaje>Motril</origenViaje>
+    <destinos>
+        <destino>
+            <nombreCiudad>Roquetas de Mar</nombreCiudad>
+            <nombreHotel>Playa Luna</nombreHotel>
+            <numNoches>3</numNoches>
+            <precio>250€</precio>
+        </destino>
+    </destinos>
+</viajeTuristico>
