@@ -1,0 +1,6 @@
+<!ELEMENT billeteAvion (nombrePasajero, aeropuertoOrigen, aeropuertoDestino, fechaVuelo, horaVuelo)>
+<!ELEMENT nombrePasajero (#PCDATA)>
+<!ELEMENT aeropuertoOrigen (#PCDATA)>
+<!ELEMENT aeropuertoDestino (#PCDATA)>
+<!ELEMENT fechaVuelo (#PCDATA)>
+<!ELEMENT horaVuelo (#PCDATA)>

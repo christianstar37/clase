@@ -1,0 +1,11 @@
+<!ELEMENT pedido (datosCliente, productos, precioTotal)>
+
+<!ELEMENT datosCliente (nombre,direccion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (#PCDATA)>
+<!ATTLIST producto num CDATA #REQUIRED>
+
+<!ELEMENT precioTotal (#PCDATA)>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videojuego [
+    <!ELEMENT videojuego (titulo, generos)>
+    <!ATTLIST videojuego titulo CDATA #REQUIRED>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT generos (genero+)>
+    <!ELEMENT genero (#PCDATA)>
+]>
+<videojuego titulo='Monster Hunter Wilds'>
+    <titulo>Monster Hunter Wilds</titulo>
+    <generos>
+        <genero>Acción</genero>
+        <genero>Aventura</genero>
+    </generos>
+</videojuego>sdsd

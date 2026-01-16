@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE billeteAvion [
+    <!ELEMENT billeteAvion (nombrePasajero, aeropuertoOrigen, aeropuertoDestino, fechaVuelo, horaVuelo)>
+    <!ELEMENT nombrePasajero (#PCDATA)>
+    <!ELEMENT aeropuertoOrigen (#PCDATA)>
+    <!ELEMENT aeropuertoDestino (#PCDATA)>
+    <!ELEMENT fechaVuelo (#PCDATA)>
+    <!ELEMENT horaVuelo (#PCDATA)>
+]>
+<billeteAvion>
+    <nombrePasajero>Christian</nombrePasajero>
+    <aeropuertoOrigen>Granada</aeropuertoOrigen>
+    <aeropuertoDestino>Madrid</aeropuertoDestino>
+    <fechaVuelo>17-02</fechaVuelo>
+    <horaVuelo>07:00</horaVuelo>
+</billeteAvion>

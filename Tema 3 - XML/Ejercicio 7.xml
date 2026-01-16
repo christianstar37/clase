@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedido SYSTEM "Ejercicio 12.dtd">
+<pedido>
+    <datosCliente>
+        <nombre>Christian</nombre>
+        <direccion>Calle Garcés Herrera</direccion>
+    </datosCliente>
+    <productos>
+        <producto num='1'>Hamburgues con queso</producto>
+        <producto num='2'>Patatas fritas</producto>
+        <producto num='1'>Fanta</producto>
+    </productos>
+    <precioTotal>11,95</precioTotal>
+</pedido>

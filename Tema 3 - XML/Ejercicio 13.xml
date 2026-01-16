@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pelicula [
+    <!ELEMENT pelicula (titulo, director, sinopsis, actores, añoEstreno?)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT director (#PCDATA)>
+    <!ELEMENT sinopsis (#PCDATA)>
+    <!ELEMENT actores (actor+)>
+    <!ELEMENT actor (#PCDATA)>
+    <!ELEMENT añoEstreno (#PCDATA)>
+]>
+<pelicula>
+    <titulo>La Familia Addams</titulo>
+    <director>Barry Sonnenfeld</director>
+    <sinopsis>La familia Addams se ve amenazada cuando una madre y su hijo, con ayuda de un abogado sin escrúpulos, conspiran para hacerse con la fortuna familiar.</sinopsis>
+    <actores>
+        <actor>Raúl Juliá</actor>
+        <actor>Anjelica Huston</actor>
+    </actores>
+    <añoEstreno>1991</añoEstreno>
+</pelicula>
