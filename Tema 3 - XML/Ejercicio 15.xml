@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro+)>
+    <!ELEMENT libro (titulo, autor, generos)>
+    <!ATTLIST libro codigo ID #REQUIRED idioma CDATA #FIXED "español">
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT generos (genero+)>
+    <!ELEMENT genero (#PCDATA)>
+]>
+<biblioteca>
+    <libro codigo="l1" idioma="español">
+        <titulo>El Quijote</titulo>
+        <autor>Miguel de Cervantes</autor>
+        <generos>
+            <genero>Aventura</genero>
+            <genero>Sátira</genero>
+        </generos>
+    </libro>
+</biblioteca>

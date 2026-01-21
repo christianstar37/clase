@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fichas [
+<!ENTITY poblacion "Tejeda de Tiétar, Cáceres">
+<!-- &población se sustituye por la definición dada con ENTITY, 
+en este caso se sustituye por Tejeda de Tiétar, Cáceres-->
+]>
+<fichas>
+    <ficha>
+        <empresa nombre="Tractores Toledo"></empresa>
+        <direccion>&poblacion;</direccion>
+    </ficha>
+    <ficha>
+        <empresa nombre="Congelados Kurylenko"></empresa>
+        <direccion>&poblacion;</direccion>
+    </ficha>
+</fichas>

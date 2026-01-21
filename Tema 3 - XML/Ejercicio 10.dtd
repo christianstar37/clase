@@ -1,0 +1,7 @@
+<!ELEMENT libroRecetas (receta+)>
+<!ELEMENT receta (nombre, ingredientes, intrucciones)>
+<!ATTLIST receta dificultad CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ingredientes (ingrediente+)>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ELEMENT instrucciones (#PCDATA)>

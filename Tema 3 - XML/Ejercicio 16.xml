@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+    xs:noNamespaceSchemaLocation="Ejercicio 16.xsd">
+    <pelicula>
+        <titulo>El Arte del Cine</titulo>
+        <director>María López</director>
+        <anioEstreno>2021</anioEstreno>
+        <precio>14.99</precio>
+    </pelicula>
+</peliculas>
