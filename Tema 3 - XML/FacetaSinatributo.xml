@@ -1,0 +1,13 @@
+<producto>
+  <codigo>A123</codigo>
+  <nombre>Teclado</nombre>
+  <cantidad>120</cantidad>
+  <precio>19.99</precio>
+  <edadMin>18</edadMin>
+  <descuento>20</descuento>
+  <iva>0</iva>
+  <garantia>24</garantia>
+  <categoria>informatica</categoria>
+  <marca>Logitech</marca>
+  <emailProveedor>proveedor@empresa.com</emailProveedor>
+</producto>

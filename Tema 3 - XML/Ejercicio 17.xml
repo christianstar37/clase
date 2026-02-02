@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="Ejercicio 17.xsd">
+    <contacto>
+        <nombre>Juan Pérez</nombre>
+        <correo>juan.perez@example.com</correo>
+        <telefono>123-456-7890</telefono>
+        <direccion>Calle Falsa 123, Ciudad, País</direccion>
+    </contacto>
+    <contacto>
+        <nombre>Ana Gómez</nombre>
+        <correo>ana.gomez@example.com</correo>
+        <telefono>098-765-4321</telefono>
+        <direccion>Avenida Libertad 456, Ciudad, País</direccion>
+    </contacto>
+</agenda>

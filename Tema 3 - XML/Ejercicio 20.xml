@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="Ejercicio 20.xsd">
+    <vehiculo matricula='ABC1234' marca='Toyota' precio='45000.00' añoFabricacion='2020' kilometraje='210000'/>
+    <vehiculo matricula='DEF5678' marca='Honda' precio='32000.00' añoFabricacion='2023' kilometraje='12000'/>
+</vehiculos>

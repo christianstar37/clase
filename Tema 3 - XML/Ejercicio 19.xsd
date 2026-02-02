@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="empleados">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name='empleado' maxOccurs="unbounded">
+                    <xs:complexType>
+                        
+                        <xs:attribute name='id' use='required'>
+                            <xs:simpleType>
+                                <xs:restriction base='xs:int'>
+                                    <xs:pattern value="[0-9]{4}"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+
+                        <xs:attribute name='nombre' use='required'>
+                            <xs:simpleType>
+                                <xs:restriction base='xs:string'>
+                                    <xs:minLength value="3"/>
+                                    <xs:maxLength value="50"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        
+                        <xs:attribute name='edad' use='required'>
+                            <xs:simpleType>
+                                <xs:restriction base='xs:int'>
+                                    <xs:minExclusive value="18"/>
+                                    <xs:maxExclusive value="65"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        
+                        <xs:attribute name='salario' use="required">
+                            <xs:simpleType>
+                                <xs:restriction base='xs:decimal'>
+                                    <xs:totalDigits value="6"/>
+                                    <xs:fractionDigits value="2"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        
+                        <xs:attribute name='departamento' use="required">
+                            <xs:simpleType>
+                                <xs:restriction base='xs:string'>
+                                    <xs:enumeration value="Recursos Humanos"/>
+                                    <xs:enumeration value="Ventas"/>
+                                    <xs:enumeration value="TI"/>
+                                    <xs:enumeration value="Marketing"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

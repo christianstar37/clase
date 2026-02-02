@@ -3,7 +3,7 @@
     <xs:element name="peliculas">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="pelicula">
+                <xs:element name="pelicula" maxOccurs="unbounded"> <!--El maxOccurs='unbounded' es como el + o el * en el dtd, se puede ponder un número para especificar el máximo-->
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="titulo" type="xs:string"/>

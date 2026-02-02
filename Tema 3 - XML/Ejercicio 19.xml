@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="Ejercicio 19.xsd">
+    <empleado id='1111' nombre='Christian' edad='24' salario='1150.00' departamento='TI'/>
+    <empleado id='1112' nombre='Aitor' edad='23' salario='1100.00' departamento='Ventas'/>
+</empleados>

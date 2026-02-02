@@ -1,0 +1,12 @@
+<producto
+  codigo="A123"
+  nombre="Teclado"
+  cantidad="120"
+  precio="19.99"
+  edadMin="18"
+  descuento="20"
+  iva="0"
+  garantia="24"
+  categoria="informatica"
+  marca="Logitech"
+  emailProveedor="proveedor@empresa.com"/>

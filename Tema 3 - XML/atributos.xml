@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="factura.xsd"
+        numero="12345" fecha="2025-01-25">
+  <cliente>
+    <nombre>Ediciones Paraninfo</nombre>
+    <CIF>A81461477</CIF>
+  </cliente>
+  <concepto>
+    <descripcion>Imprenta</descripcion>
+    <importe>1000.50</importe>
+  </concepto>
+  <concepto>
+    <descripcion>Maquetación</descripcion>
+    <importe>500.50</importe>
+  </concepto>
+  <totalFactura euros="1500.50"/>
+</factura>
