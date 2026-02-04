@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<expedientesAcademicos
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="Ej3.xsd">
+    <expediente>
+        <titulo>ASIR</titulo>
+        <nombreEstudiante>Christian</nombreEstudiante>
+        <modulos>
+            <modulo nombre="Digitalización" aprobado="true" curso="Primero"/>
+            <modulo nombre="Programación multimedia y dispositivos móviles" aprobado="false" curso="Segundo"/>
+        </modulos>
+    </expediente>
+    <expediente>
+        <titulo>ASIR</titulo>
+        <nombreEstudiante>Aitor</nombreEstudiante>
+        <modulos>
+            <modulo nombre="Digitalización" aprobado="false" curso="Primero"/>
+        </modulos>
+    </expediente>
+</expedientesAcademicos>

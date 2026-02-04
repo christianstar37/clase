@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--22.	Utiliza XML schema para comprobar que un documento XML es válido dada la 
+siguiente estructura: un elemento principal representando una serie que 
+contenga un título, una fecha de estreno, un número de temporadas representado por un 
+valor entero con un valor mínimo de 1 y máximo de 50 y un género que elegir entre "comedia”, "drama” y “ciencia ficción"-->
+<serie
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="Ejercicio 22.xsd">
+    <titulo>Juego de Tronos</titulo>
+    <fechaEstreno>2011-05-17</fechaEstreno>
+    <numTemporadas>8</numTemporadas>
+    <genero>Drama</genero>
+</serie>

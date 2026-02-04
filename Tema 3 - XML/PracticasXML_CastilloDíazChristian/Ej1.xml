@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliotecaDigital>
+    <informacionCentro>
+        <nombre></nombre>
+        <ubicacion>
+            <ciudad></ciudad>
+            <pais></pais>
+        </ubicacion>
+        <añoFundacion></añoFundacion>
+    </informacionCentro>
+    <listadoLibros>
+        <libro ISBN="">
+            <titulo></titulo>
+            <autores>
+                <autor></autor>
+            </autores>
+            <añoPublicacion></añoPublicacion>
+            <generos>
+                <genero></genero>
+                <genero></genero>
+            </generos>
+            <idioma></idioma>
+        </libro>
+    </listadoLibros>
+    <listadoPrestamos>
+        <prestamo>
+            <nombreUsuario id=""></nombreUsuario>
+            <inicioPrestamo></inicioPrestamo>
+            <finPrestamo></finPrestamo>
+            <estado></estado>
+        </prestamo>
+    </listadoPrestamos>
+</bibliotecaDigital>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaFutbol [
+    <!ELEMENT ligaFutbol (partido)>
+    <!ELEMENT partido (local, visitante)>
+    <!ELEMENT local (nombre)>
+    <!ATTLIST local goles CDATA #REQUIRED>
+    <!ELEMENT visitante (nombre)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ATTLIST visitante goles CDATA #REQUIRED>
+]>
+
+<ligaFutbol>
+    <partido>
+        <local goles="3">
+            <nombre>Vodka Juniors</nombre>
+        </local>
+        <visitante goles="3">
+            <nombre>Sparta da Risa</nombre>
+        </visitante>
+    </partido>
+</ligaFutbol>
