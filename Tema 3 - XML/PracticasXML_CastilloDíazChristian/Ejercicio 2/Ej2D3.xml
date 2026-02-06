@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ligaFutbol [
-    <!ELEMENT ligaFutbol (partido)>
+    <!ELEMENT ligaFutbol (partido+)>
     <!ELEMENT partido (local, visitante)>
     <!ELEMENT local (#PCDATA)>
     <!ATTLIST local nombre CDATA #REQUIRED goles CDATA #REQUIRED>
@@ -9,6 +9,14 @@
 ]>
 
 <ligaFutbol>
+    <partido>
+        <local nombre='Nottingham Presa' goles='0'/>
+        <visitante nombre='Inter de Mitente' goles='1'/>
+    </partido>
+    <partido>
+        <local nombre='Vodka Juniors' goles="3"/>
+        <visitante nombre='Sparta da Risa' goles="3"/>
+    </partido>
     <partido>
         <local nombre="Water de Múnich" goles="4"/>
         <visitante nombre ="Esteaua es del grifo" goles="2"/>
