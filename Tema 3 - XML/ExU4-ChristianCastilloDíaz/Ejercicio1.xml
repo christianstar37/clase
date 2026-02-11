@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hamburgueseria SYSTEM "ejercicio2.dtd">
+<!-- 
+Ejercicio1.- Entrega en el archivo ejercicio1.xml la siguiente especificación.
+
+Crea un Documento bien formado  que represente el pedido a una hamburguesería.
+Usa elementos o atributos según consideres apropiado (OBLIGATORIO AL MENOS UN ATRIBUTO).
+* La información contenida es: 
+    *número de pedido, atributo
+    *fecha, elemento
+    *nombre de cliente, elemento 
+    *dirección del cliente  elemento
+    * listado de productos( cada producto tendrá: nombre del producto, número de unidades, precio unitario, subtotal),
+    * IVA aplicado,
+    * total con impuestos.
+-->
+
+<hamburgueseria>
+    <pedido numero='P012'>
+        <fecha>24-12-2025</fecha>
+        <nombreCliente>Christian</nombreCliente>
+        <direccion>Calle Madreselva</direccion>
+        <productos>
+            <producto nombre='patatas fritas' precioUnidad='2,00'>
+                <unidades>3</unidades>
+                <subtotal>6,00</subtotal>
+            </producto>
+            <producto nombre='hamburguesa' precioUnidad='5,00'>
+                <unidades>2</unidades>
+                <subtotal>10,00</subtotal>
+            </producto>
+        </productos>
+        <precio>
+            <iva>1,60</iva>
+            <precioTotal>17,60</precioTotal>
+        </precio>
+    </pedido>
+</hamburgueseria>

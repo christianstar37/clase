@@ -1,0 +1,23 @@
+<!-- 
+Ejercicio 2.- Entrega en el archivo ejercicio2.dtd un dtd externo que 
+valide el formato del documento xml que has creado en ejercicio1.
+-->
+
+<!ELEMENT hamburgueseria (pedido+)>
+
+<!ELEMENT pedido (fecha, nombreCliente, direccion, productos, precio)>
+<!ATTLIST pedido numero ID #REQUIRED>
+
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT nombreCliente (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (unidades, subtotal)>
+<!ATTLIST producto nombre CDATA #REQUIRED precioUnidad CDATA #REQUIRED>
+<!ELEMENT unidades (#PCDATA)>
+<!ELEMENT subtotal (#PCDATA)>
+
+<!ELEMENT precio (iva, precioTotal)>
+<!ELEMENT iva (#PCDATA)>
+<!ELEMENT precioTotal (#PCDATA)>

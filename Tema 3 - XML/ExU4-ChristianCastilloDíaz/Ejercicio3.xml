@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+Ejercicio 3.- Entrega en los archivos ejercicio3.xml y ejercicio3.xsd  la siguiente especificación
+Un documento xml que contenga información válida para su estructura XMLSchema y que siga la siguiente estructura:
+* Un elemento principal representando series (una o muchas series)
+* Cada serie tendrá 
+    * un título, 
+    * una fecha de estreno, 
+    * un número de temporadas (valor entero positivo entre 1 y 50),
+    * y un género como atributo de serie (a elegir entre "comedia", "drama", o "ciencia ficción")
+-->
+
+<series
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="ejercicio3.xsd">
+    <serie genero='comedia'>
+        <titulo>La Que Se Avecina</titulo>
+        <fechaEstreno>2008-07-20</fechaEstreno>
+        <numTemporadas>14</numTemporadas>
+    </serie>
+</series>
