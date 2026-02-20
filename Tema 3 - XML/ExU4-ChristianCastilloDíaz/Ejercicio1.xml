@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hamburgueseria SYSTEM "ejercicio2.dtd">
+
 <!-- 
 Ejercicio1.- Entrega en el archivo ejercicio1.xml la siguiente especificación.
-
 Crea un Documento bien formado  que represente el pedido a una hamburguesería.
 Usa elementos o atributos según consideres apropiado (OBLIGATORIO AL MENOS UN ATRIBUTO).
 * La información contenida es: 

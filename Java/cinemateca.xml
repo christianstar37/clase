@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cinemateca>
+	<pelicula genero="Ciencia Ficción">
+        <titulo>Interestelar</titulo>
+        <director>Christopher Nolan</director>
+        <año>2014</año>
+        <disponible>true</disponible>
+	</pelicula>
+	<pelicula genero="Drama">
+        <titulo>Forrest Gump</titulo>
+        <director>Robert Zemeckis</director>
+        <año>1994</año>
+        <disponible>false</disponible>
+	</pelicula>
+	<pelicula genero="Acción">
+        <titulo>Mad Max: Furia en la Carretera</titulo>
+        <director>George Miller</director>
+        <año>2015</año>
+        <disponible>true</disponible>
+	</pelicula>
+	<pelicula genero="Ciencia Ficción">
+        <titulo>Blade Runner</titulo>
+        <director>Ridley Scott</director>
+        <año>1982</año>
+        <disponible>true</disponible>
+	</pelicula>
+</cinemateca>

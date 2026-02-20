@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<series>
+    <serie>
+        <titulo>Los Bridgerton</titulo>
+        <numTemp>4</numTemp>
+        <añoEmision>2020</añoEmision>
+    </serie>
+    <serie>
+        <titulo>La Que Se Avecina</titulo>
+        <numTemp>16</numTemp>
+        <añoEmision>2007</añoEmision>
+    </serie>
+    <serie>
+        <titulo>Los Simpsons</titulo>
+        <numTemp>37</numTemp>
+        <añoEmision>1989</añoEmision>
+    </serie>
+    <serie>
+        <titulo>Los Soprano</titulo>
+        <numTemp>6</numTemp>
+        <añoEmision>1999</añoEmision>
+    </serie>
+    <serie>
+        <titulo>Con El Culo Al Aire</titulo>
+        <numTemp>3</numTemp>
+        <añoEmision>2012</añoEmision>
+    </serie>
+</series>
