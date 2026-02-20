@@ -1,0 +1,10 @@
+<!ELEMENT presidentes (presidente+, familiar+)>
+<!ELEMENT presidente (nombre, vida, mandato)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT vida (#PCDATA)>
+<!ATTLIST vida nacimiento CDATA #REQUIRED pais CDATA #REQUIRED muerte CDATA #REQUIRED>
+<!ELEMENT mandato (#PCDATA)>
+<!ATTLIST mandato inicio CDATA #REQUIRED fin CDATA #REQUIRED>
+<!ELEMENT familiar (padre, hijo)>
+<!ELEMENT padre (#PCDATA)>
+<!ELEMENT hijo (#PCDATA)>

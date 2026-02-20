@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE presidentes SYSTEM 'presidentes.dtd'>
+<presidentes>
+    <presidente>
+        <nombre>George Washington</nombre>
+        <vida nacimiento="1732" pais="EEUU" muerte="1799"/>
+        <mandato inicio="1789" fin="1797"/>
+    </presidente>
+    <presidente>
+        <nombre>Abraham Lincoln</nombre>
+        <vida nacimiento="1809" pais="EEUU" muerte="1865"/>
+        <mandato inicio="1861" fin="1865"/>
+    </presidente>
+    <presidente>
+        <nombre>Theodore Roosevelt</nombre>
+        <vida nacimiento="1858" pais="EEUU" muerte="1919"/>
+        <mandato inicio="1901" fin="1909"/>
+    </presidente>
+    <presidente>
+        <nombre>Franklin D. Roosevelt</nombre>
+        <vida nacimiento="1882" pais="EEUU" muerte="1945"/>
+        <mandato inicio="1933" fin="1945"/>
+    </presidente>
+    <presidente>
+        <nombre>John F. Kennedy</nombre>
+        <vida nacimiento="1917" pais="EEUU" muerte="1963"/>
+        <mandato inicio="1961" fin="1963"/>
+    </presidente>
+    <familiar>
+        <padre>George Washington</padre>
+        <hijo>John Washington</hijo>
+    </familiar>
+    <familiar>
+        <padre>Theodore Roosevelt</padre>
+        <hijo>Franklin D. Roosevelt</hijo>
+    </familiar>
+    <familiar>
+        <padre>Franklin D. Roosevelt</padre>
+        <hijo>John F. Kennedy</hijo>
+    </familiar>
+</presidentes>

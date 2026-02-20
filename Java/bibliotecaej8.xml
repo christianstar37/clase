@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+	<libro categoria="Ficción">
+        <titulo>El Gran Gatsby</titulo>
+        <autor>F. Scott Fitzgerald</autor>
+        <año>1925</año>
+        <disponible>true</disponible>
+	</libro>
+	<libro categoria="Ficción">
+        <titulo>Cien años de soledad</titulo>
+        <autor>Gabriel García Márquez</autor>
+        <año>1967</año>
+        <disponible>false</disponible>
+	</libro>
+</biblioteca>
