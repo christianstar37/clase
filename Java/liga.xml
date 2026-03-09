@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga [
+<!ELEMENT liga (jornada*)>
+<!ELEMENT jornada (partido*)>
+<!ATTLIST jornada numero CDATA #REQUIRED>
+<!ELEMENT partido (local,visitante)>
+<!ELEMENT local (#PCDATA)>
+<!ATTLIST local goles CDATA "0">
+<!ELEMENT visitante (#PCDATA)>
+<!ATTLIST visitante goles CDATA "0">
+]>
+<liga>
+    <jornada numero="1">
+        <partido>
+            <local goles='2'>Real Madrid</local>
+            <visitante>FC Barcelona</visitante>
+        </partido>
+        <partido>
+            <local>Guadix</local>
+            <visitante>Getafe</visitante>
+        </partido>
+        <partido>
+            <local>Lanjarón</local>
+            <visitante goles='2'>Real Betis</visitante>
+        </partido>
+        <partido>
+            <local>Sevila</local>
+            <visitante goles='3'>Granada</visitante>
+        </partido>
+    </jornada>
+    <jornada numero="2">
+        <partido>
+            <local>Real Madrid</local>
+            <visitante goles='1'>Granada</visitante>
+        </partido>
+        <partido>
+            <local goles='3'>Sevilla</local>
+            <visitante goles='1'>Lanjarón</visitante>
+        </partido>
+        <partido>
+            <local>Guadix</local>
+            <visitante>Getafe</visitante>
+        </partido>
+        <partido>
+            <local goles='2'>FC Barcelona</local>
+            <visitante goles='5'>Real Betis</visitante>
+        </partido>
+    </jornada>
+    <jornada numero="3">
+        <partido>
+            <local>Real Betis</local>
+            <visitante>Real Madrid</visitante>
+        </partido>
+        <partido>
+            <local>Getafe</local>
+            <visitante goles='3'>Lanjarón</visitante>
+        </partido>
+        <partido>
+            <local goles='1'>FC Barcelona</local>
+            <visitante>Sevilla</visitante>
+        </partido>
+        <partido>
+            <local>Guadix</local>
+            <visitante>Granada</visitante>
+        </partido>
+    </jornada>
+    <jornada numero="4">
+        <partido>
+            <local goles='4'>FC Barcelona</local>
+            <visitante goles='2'>Guadix</visitante>
+        </partido>
+        <partido>
+            <local goles='3'>Getafe</local>
+            <visitante goles='1'>Real Madrid</visitante>
+        </partido>
+        <partido>
+            <local goles='1'>Lanjarón</local>
+            <visitante>Sevilla</visitante>
+        </partido>
+        <partido>
+            <local>Real Betis</local>
+            <visitante goles='3'>Granada</visitante>
+        </partido>
+    </jornada>
+</liga>

@@ -1,0 +1,60 @@
+Instrucciones
+-------------------------------------------------------------------
+Usando como base de datos el archivo ex.xml que le proporciono y el sistema de Bases de datos  BaseX
+
+Complete archivo respuestas.txt completando todas las preguntas del mismo.
+
+Entregue en un archivo comprimido con formato zip los archivos en los que ha trabajado.
+-------------------------------------------------------------------
+
+Copie sus respuestas bajo el enunciado de cada pregunta.
+(Para las preguntas de XPath, ponga la expresión XPath y el resultado obtenido.
+
+1- Cree un DTD que valide completamente el archivo ex.xml 
+
+<!ELEMENT reyes (persona+,relacion+)>
+<!ELEMENT persona (nombre, vida, monarca*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT vida (#PCDATA)>
+<!ATTLIST vida nacimiento CDATA #REQUIRED pais CDATA #REQUIRED muerte CDATA #REQUIRED>
+<!ELEMENT monarca (cargo, pais)>
+<!ELEMENT cargo (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT relacion (padre, hijo)>
+<!ELEMENT padre (#PCDATA)>
+<!ELEMENT hijo (#PCDATA)>
+
+2.- Nombre(no etiqueta) de los países con monarca.
+Expresión: distinct-values(//monarca/pais/text())
+
+Resultado:
+
+
+3.- Nombre(no etiqueta) de los hijos de la Emperatriz Victoria.
+Expresión: //relacion[padre='Reina Victoria']/hijo/text()
+
+Resultado:
+
+
+4.- Países en los que nacieron las personas(de la BD) nacidas antes de 1850
+Expresión: distinct-values(//persona/vida[@nacimiento<1850]/@pais/string())
+
+Resultado:
+
+
+
+5.- Nombre (no etiqueta) de las personas nacidas en Alemania: 
+Expresión: //persona[vida/@pais='Alemania']/nombre/text()
+
+Resultado:
+
+
+
+
+6.- Nietos (con etiqueta) de la Reina Victoria:
+Expresión: 
+
+
+Resultado:
+
+

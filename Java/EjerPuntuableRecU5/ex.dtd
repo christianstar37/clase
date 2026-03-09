@@ -1,0 +1,11 @@
+<!ELEMENT reyes (persona+,relacion+)>
+<!ELEMENT persona (nombre, vida, monarca*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT vida (#PCDATA)>
+<!ATTLIST vida nacimiento CDATA #REQUIRED pais CDATA #REQUIRED muerte CDATA #REQUIRED>
+<!ELEMENT monarca (cargo, pais)>
+<!ELEMENT cargo (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT relacion (padre, hijo)>
+<!ELEMENT padre (#PCDATA)>
+<!ELEMENT hijo (#PCDATA)>
