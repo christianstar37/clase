@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Ejercicio 4.xsl" type="text/xsl"?>
+<libros>
+	<libro>
+        <titulo>El Camino de los Reyes</titulo>
+        <autor>Brandon Sanderson</autor>
+        <año>2010</año>
+    </libro>
+    <libro>
+        <titulo>Trono de Cristal</titulo>
+        <autor>Sarah J. Maas</autor>
+        <año>2012</año>
+    </libro>
+    <libro>
+        <titulo>Ciudad de Hueso</titulo>
+        <autor>Cassandra Clare</autor>
+        <año>2007</año>
+    </libro>
+</libros>

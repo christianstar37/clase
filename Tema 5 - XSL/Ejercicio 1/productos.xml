@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transformacion.xsl"?>
+<productos>
+	<producto>
+                <nombre>Computadora</nombre>
+                <precio>800</precio>
+	</producto>
+	<producto>
+                <nombre>Teléfono</nombre>
+                <precio>500</precio>
+	</producto>
+	<producto>
+                <nombre>Tablet</nombre>
+                <precio>300</precio>
+	</producto>
+</productos>

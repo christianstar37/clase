@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Ejercicio 5.xsl" type="text/xsl"?>
+<alumnos>
+	<alumno>
+        <nombre>Juan</nombre>
+        <nota>9</nota>
+    </alumno>
+    <alumno>
+        <nombre>Lucía</nombre>
+        <nota>6</nota>
+    </alumno>
+    <alumno>
+        <nombre>Carlos</nombre>
+        <nota>4</nota>
+    </alumno>
+</alumnos>
