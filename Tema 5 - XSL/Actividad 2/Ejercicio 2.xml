@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Ejercicio 2.xsl" type="text/xsl"?>
+<curriculum>
+    <nombre>Christian Castillo Díaz</nombre>
+    <datos>
+        <numTel>604 82 50 15</numTel>
+        <email>christian@gmail.com</email>
+    </datos>
+    <formacion>
+        <titulacion>
+            <nombre año="2020">Química</nombre>
+            <tipo>Grado Universitario</tipo>
+            <centro>Universidad de Granada</centro>
+        </titulacion>
+        <titulacion>
+            <nombre año="2026">Administrador de Sistemas Informáticos en Red</nombre>
+            <tipo>Grado Superior de Formación Profesional</tipo>
+            <centro>I.E.S. Francisco Javier de Burgos</centro>
+        </titulacion>
+    </formacion>
+    <expProfesional>
+        <trabajo>
+            <nombre añoInicio="2018" añoFin="2020">Ayudante en Laboratorio</nombre>
+            <empresa>Laboratorio Gavinet</empresa>
+        </trabajo>
+        <trabajo>
+            <nombre añoInicio="2024" añoFin="2025">Analista de datos</nombre>
+            <empresa>UVIBYTE</empresa>
+        </trabajo>
+    </expProfesional>
+</curriculum>
