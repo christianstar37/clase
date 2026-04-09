@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Examen 1.xsl" type="text/xsl"?>
+<video_games>
+    <game>
+        <name>Pac-Man</name>
+        <description>A classic maze game where the player controls a yellow character that must eat dots while avoiding ghosts.</description>
+        <platform>Arcade</platform>
+    </game>
+    <game>
+        <name>Space Invaders</name>
+        <description>An iconic shooting game where the player controls a spaceship defending against alien invaders.</description>
+        <platform>Arcade</platform>
+    </game>
+    <game>
+        <name>Super Mario Bros</name>
+        <description>The famous platformer where Mario must rescue Princess Peach from Bowser, facing various enemies and obstacles.</description>
+        <platform>Nintendo Entertainment System (NES)</platform>
+    </game>
+    <game>
+        <name>Tetris</name>
+        <description>An addictive puzzle game where the player must fit falling geometric pieces together.</description>
+        <platform>Various</platform>
+    </game>
+</video_games>
